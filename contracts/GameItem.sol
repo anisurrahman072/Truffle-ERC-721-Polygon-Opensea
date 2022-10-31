@@ -19,10 +19,9 @@ contract GameItem is ERC721URIStorage, Ownable {
 
     // for opensea collection
     // ################## CHANGE: Added the ipfs json URI in return section in bellow contractURI() ##################
-    // ################## CHANGE: Added the ipfs json URI in return section in bellow contractURI() ##################
     function contractURI() public pure returns (string memory) {
         return
-            "https://ipfs.io/ipfs/bafyreickbvarkerkn5edswktm5n7yphdjnfozkm7lcaxlenfxh64m46gke/metadata.json";
+            "https://ipfs.io/ipfs/bafyreiezvzdgidnbrixx722nbi3krvmjyzcrhef7p25itgulrfdegzaukm/metadata.json";
     }
 
     function mintItem(address player, string memory tokenURI)

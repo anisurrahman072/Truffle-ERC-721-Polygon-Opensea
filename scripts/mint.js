@@ -11,7 +11,7 @@ const API_KEY = process.env.NODE_KEY;
 //* Remember to write the nft address in manually after deploying the contract
 // ################## CHANGE 1: Added nft_contract_address after run the migrate command & you will find the nft_contract_address in the log under 2_deploy_token.js ##################
 // ################## CHANGE 2: Added owner_address which is METAMASK ETCH Account public address ##################
-const NFT_CONTRACT_ADDRESS = "0xeB87E1582Fb835237435F912e04D6d3ff5F9ee1F";
+const NFT_CONTRACT_ADDRESS = "0x57e7E5B232a026E842dF6d0861f54CF03F9F3545";
 const OWNER_ADDRESS = "0x64c58412d3a1aB9e8Ef915EcACdcbF102e05E82f";
 const MUMBAI = `https://rpc-mumbai.maticvigil.com/v1/${API_KEY}`;
 const MATIC = `https://rpc-mainnet.maticvigil.com/v1/${API_KEY}`;
@@ -42,7 +42,7 @@ async function main() {
     await nftContract.methods
       .mintItem(
         OWNER_ADDRESS,
-        `https://ipfs.io/ipfs/bafyreickbvarkerkn5edswktm5n7yphdjnfozkm7lcaxlenfxh64m46gke/metadata.json`
+        `https://ipfs.io/ipfs/bafyreidiw556l5xt57uk74j3uqsrece2tr7f2qhgn5vsrvukf7qwfpxr44/metadata.json`
       )
       .send({ from: OWNER_ADDRESS })
       .then(console.log("minted"))
